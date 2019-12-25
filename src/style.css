@@ -1,0 +1,37 @@
+.img-carousel {
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 70%;
+}
+
+.coursive-font {
+    font-family: 'Pacifico', cursive;
+}
+
+.wine-color {
+    color: darkred !important;
+}
+
+.button_wine-color {
+    background-color: darkred;
+    color: white; 
+}
+
+.button_wine-color:hover {
+    background-color: white;
+    color: darkred; 
+}
+
+.border_wine-color {
+    border-color: darkred;
+}
+
+.card_recipes-width {
+    max-width: 25rem;
+}
+
+.img-recipes {
+    height: 200px;
+    object-fit: cover;
+    /* object-position: 0 70%; */
+}
