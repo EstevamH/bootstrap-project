@@ -33,5 +33,17 @@
 .img-recipes {
     height: 200px;
     object-fit: cover;
-    /* object-position: 0 70%; */
+}
+
+.invalid {
+    border: 2px solid #ffdddd;
+}
+
+.valid {
+    border: 2px solid #ddffdd;
+}
+
+.message-erro {
+    font-size: 14px;
+    color: #ffdddd;
 }

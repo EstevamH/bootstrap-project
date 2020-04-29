@@ -6,7 +6,7 @@
     <title>fruta e fruto</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="stylesheet" type="text/css" href="src/style/style.css">
   </head>
 
   <body>
@@ -20,9 +20,9 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
            <li><a class="nav-item nav-link active" href="#">início <span class="sr-only">(current)</span></a></li>
-           <li><a class="nav-item nav-link" href="#">receitas</a></li>
-           <li><a class="nav-item nav-link" href="#">quem somos</a></li>
-           <li><a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#exampleModal">contato</a></li>
+           <li><a class="nav-item nav-link" href="#receitas">receitas</a></li>
+           <li><a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#contact-modal">contato</a></li>
+           <li><a class="nav-item nav-link" href="login.html">login</a></li>
           </ul>
         </div>
       </nav>
@@ -129,35 +129,33 @@
     </footer>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <header class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+              <h5 class="modal-title" id="contact-modalLabel">Entre em contato</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </header>
             <main class="modal-body">
-              <form>
+              <form id="contact-form">
                 <div class="form-group">
-                  <label for="formGroupExampleInput">Nome completo</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seu nome">
+                  <label for="contact-name">Nome completo</label>
+                  <input type="text" name="name" class="form-control" required id="contact-name" placeholder="Seu nome">
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                  <label for="contact-email">Email</label>
+                  <input type="email" name="email" class="form-control" required id="contact-email" placeholder="nome@exemplo.com">
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Deixe seu comentário</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="contact-comment">Deixe seu comentário</label>
+                  <textarea class="form-control" name="comment" required id="contact-comment" rows="3"></textarea>
                 </div>
-              </form>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="submit" id="submit-contact" class="btn button_wine-color">Enviar</button>
+              </form>              
             </main>
-            <footer class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-              <button type="button" class="btn button_wine-color">Enviar</button>
-            </footer>
           </div>
         </div>
       </div>
@@ -165,7 +163,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src=""></script>
-
+    <script src="src/script/contact.js"></script>
   </body>
 </html>
