@@ -5,6 +5,6 @@ button.addEventListener('click', function() {
     var pass = document.querySelector('#password')
     if (email.checkValidity() && pass.checkValidity()) {
         event.preventDefault();
-        window.location.href = '../../index.html';
+        window.location.href = 'index.html';
     }
 })
